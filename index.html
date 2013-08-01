@@ -104,7 +104,7 @@
           if(myStartingString.length > 0 && myStartingString != '' ){
             // We have a string, we'll spanize the sucker.
             for(var i=0; i<myStartingString.length; i += 1){
-              myResultsContainer.append(spanEl.clone().text(myStartingString[i]).attr("hidden", "hidden") );
+              myResultsContainer.append(spanEl.clone().text(myStartingString[i]).attr("hidden","") );
             }
           };
         };
@@ -124,7 +124,7 @@
               allMySpans = myResultsContainer.find("span");
 
           if(myOriginalListOfSpans.length === 0){
-            allMySpans.attr("hidden", "hidden");
+            allMySpans.attr("hidden", "");
             myOriginalListOfSpans = allMySpans;
           }
           for(var i = 0; i<myOriginalListOfSpans.length; i += 1){
